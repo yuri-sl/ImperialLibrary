@@ -101,3 +101,53 @@ body {
     /* Fade in the links */
   }
 }
+
+@media (max-width: 480px) {
+  .Text {
+    font-size: 40px;
+    /* Adjusted font size for mobile readability */
+    text-align: center;
+  }
+  .Text a {
+    font-size: 30px;
+    /* Smaller, readable link size */
+    margin: 10px;
+    /* Compact spacing for links */
+  }
+  .rectangle {
+    width: auto;
+    height: 130vh;
+    /* Ensures full coverage on mobile */
+    object-fit: fill;
+    position: absolute;
+    top: 34rem;
+    left: 12rem;
+  }
+  .container {
+    padding: 0px;
+    height: auto;
+    width: auto;
+    /* Slightly more padding for spacing */
+  }
+  .backgroundImage {
+    width: 100%;
+    height: 130vh;
+    /* Ensures full coverage on mobile */
+    object-fit: cover;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+  }
+  .container > img {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    left: 0;
+    right: 0;
+  }
+  .container > h2 {
+    font-size: 40px;
+  }
+}
