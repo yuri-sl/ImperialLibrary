@@ -73,7 +73,7 @@ body {
   display: inline-block;
   margin: 24px;
   opacity: 0;
-  animation: fadeInLink 2s forwards 5s;
+  animation: fadeInLink 2s forwards 3s;
 }
 
 .Text a:hover {
