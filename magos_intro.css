@@ -1,0 +1,47 @@
+html, body {
+    margin: 0;
+    padding: 1;
+    height: 100%; /* Garante que o corpo ocupe toda a altura da tela */
+  }
+
+footer{
+    background-color: gray;
+}
+
+nav{
+    color: white;
+    background-color: black;
+    font-size: 1vw;
+    width: 30%;
+    top:0;
+    left: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar-links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.magesBG{
+    width: 30%;
+    height: auto;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    position: relative;
+    padding: 0;
+    border: 0;
+    margin: 0;
+
+}
+
+.section,p{
+    font-size: 16px;
+}
