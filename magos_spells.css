@@ -3,6 +3,10 @@ body {
   margin: 0;
   padding: 1;
   height: 100%;
+  background-color: #0a0c0e;
+  text-align: justify;
+  line-height: 1.8;
+  font-size: 1.1em;
   /* Garante que o corpo ocupe toda a altura da tela */
 }
 
@@ -10,116 +14,54 @@ footer {
   background-color: gray;
 }
 
-nav {
-  color: white;
-  background-color: black;
-  font-family: MedievalSharp;
-  font-size: 2vw;
-  width: 50%;
-  top: 0;
-  left: 0;
-  border: 0;
-  margin: 0;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-.siteBG {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  z-index: -2;
-  filter: blur(10px);
-}
-
-.navbar-links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  margin-left: 5rem;
-  margin-right: 5rem;
-}
-
 .magesBG {
-  width: 50%;
+  width: 100%;
   height: auto;
   top: 0;
   left: 0;
-  object-fit: cover;
+  z-index: -1;
+}
+
+.container {
+  text-align: center;
   position: relative;
-  padding: 0;
-  border: 0;
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
 }
 
-.section,
-p {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 1.2vw;
-  text-align: center;
-}
-
-.section,
-h2 {
-  text-align: center;
-  font-size: 1.4vw;
-  top: 0px;
-  margin: 0px;
-  font-family: MedievalSharp;
-}
-
-#ScrollableText {
-  /* Adjust height to fit screen proportion */
-  max-width: 48%;
-  /* Adjust width for a centered, readable section */
-  margin: 2rem auto;
-  /* Center the section and add spacing */
-  padding: 1.5rem;
-  /* Add space inside the section for readability */
-  background-color: white;
-  /* White background for the text */
-  border-radius: 10px;
-  /* Add rounded corners for a clean look */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  /* Add shadow for a lifted effect */
-  overflow-y: auto;
-  /* Enable vertical scrolling for overflowing content */
-  text-align: justify;
-  /* Align text for a neat appearance */
-  line-height: 1.8;
-  /* Improve line spacing for readability */
-  font-size: 1.1em;
-  /* Slightly larger font for easier reading */
-}
-
-#ScrollableText::before {
-  content: "";
-  position: absolute;
+.logo {
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  /* Background image URL */
-  background-size: cover;
-  background-position: center;
-  opacity: 0.2;
-  /* Make the background image faint */
-  z-index: -1;
-  /* Ensure it stays behind the text */
+  position: absolute;
+  z-index: 1;
+}
+
+.navbar-links {
+  position: absolute;
+  z-index: 10;
+  top: 0%;
+  right: 0%;
+  color: white;
+  display: inline;
+  font-size: 2vw;
+  margin: 2rem;
+}
+
+.navbar-links,
+a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li {
+  display: inline;
+  font-size: 2vw;
+  margin: 2rem;
+}
+
+#Destruction-Container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 #Spells {
@@ -147,4 +89,18 @@ h2 {
   font-size: 2.5vw;
   font-weight: bold;
   cursor: pointer;
+}
+
+#ScrollableText {
+  width: 100%;
+  height: 100%;
+  text-align: justify;
+  line-height: 1.8;
+  font-size: 1.1em;
+  z-index: 0;
+}
+
+.Destruction-Container {
+  position: relative;
+  z-index: 1;
 }
