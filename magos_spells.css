@@ -57,13 +57,6 @@ nav ul li {
   margin: 2rem;
 }
 
-#Destruction-Container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
 #Spells {
   color: rgb(70, 195, 245);
   font-size: 2vw;
@@ -91,16 +84,82 @@ nav ul li {
   cursor: pointer;
 }
 
-#ScrollableText {
+.ScrollableText {
   width: 100%;
-  height: 100%;
-  text-align: justify;
+  /* Garante que ocupa pelo menos o tamanho da tela */
   line-height: 1.8;
   font-size: 1.1em;
   z-index: 0;
 }
 
-.Destruction-Container {
+#FireStormText {
+  display: grid;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  /* Espaçamento superior */
   position: relative;
   z-index: 1;
+}
+
+#FireStormText img {
+  max-width: 60%;
+  display: grid;
+  height: 80%;
+  margin: 1rem;
+  /* Para adicionar espaço entre as imagens */
+}
+
+#Destruction-Symbol {
+  align-items: center;
+  right: 50rem;
+  width: 15%;
+  position: absolute;
+}
+
+section,
+h2,
+p {
+  color: white;
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+#Fire {
+  font-size: 2.5vw;
+  text-align: center;
+  background: linear-gradient(#ff0000, #ff8c00, #ffd700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+#Conjuration {
+  font-size: 2.5vw;
+  text-align: center;
+  background: linear-gradient(#6240a0, #3f0086);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+#Conjuration-Symbol {
+  opacity: 40%;
+  position: absolute;
+  right: 40rem;
+}
+
+#Conjuration-Container {
+  display: flex;
+}
+
+#Atronach {
+  width: 100%;
+}
+
+#Conjuration-Container,
+p {
+  position: relative;
+  font-size: 64px;
 }
