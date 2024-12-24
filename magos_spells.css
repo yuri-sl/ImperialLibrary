@@ -111,7 +111,7 @@ nav ul li {
 
 #Destruction-Symbol {
   align-items: center;
-  right: 50rem;
+  right: 20rem;
   width: 15%;
   position: absolute;
 }
@@ -145,9 +145,10 @@ p {
 }
 
 #Conjuration-Symbol {
-  opacity: 40%;
+  opacity: 20%;
   position: absolute;
-  right: 40rem;
+  right: 20rem;
+  bottom: -5rem;
 }
 
 #Conjuration-Container {
@@ -162,4 +163,25 @@ p {
 p {
   position: relative;
   font-size: 64px;
+}
+
+#Restoration{
+  font-size: 2.5vw;
+  text-align: center;
+  background: linear-gradient(#ffd700,#ff8c00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+
+#Restoration-Container{
+  display: flex;
+}
+
+#Restoration-symbol{
+  opacity: 20%;
+  position: absolute;
+  right: 15rem;
 }
