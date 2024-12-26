@@ -183,7 +183,7 @@ p {
     opacity: 30%;
     position: absolute;
     right: 10%;
-    width: 20rem;
+    width: 25rem;
     top: 10%;
 }
 
@@ -280,7 +280,7 @@ p {
     position: absolute;
     right: 10%;
     width: 20rem;
-    top: 235rem;
+    top: 225rem;
 }
 
 #Alteration {
@@ -328,6 +328,7 @@ p {
     display: flex;
     color: white;
     font-size: 0.5rem;
+    min-width: 30rem;
 }
 
 .IntroContainer p {
@@ -335,14 +336,31 @@ p {
     text-align: justify;
     left: 2rem;
     word-spacing: 1.5p;
+    min-width: 30rem;
 }
 
 .SorcererDragon {
     max-width: fit-content;
     height: fit-content;
-    width: 35rem;
+    width: 80rem;
     margin: 0rem 4rem 0rem 4rem;
     border-left: 1rem;
+    min-width: 10rem;
+}
+
+#Intro:hover {
+    color: #004883;
+    transition: 0.5s;
+}
+
+#Spells:hover {
+    color: #cc0000;
+    transition: 0.5s;
+}
+
+#Guild:hover {
+    color: yellow;
+    transition: 0.5s;
 }
 
 @media (max-width: 1000px) {
