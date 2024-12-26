@@ -1,425 +1,427 @@
 html,
 body {
-  margin: 0;
-  padding: 1;
-  height: 100vh;
-  width: 100vw;
-  background-color: #0a0c0e;
-  text-align: justify;
-  line-height: 1.8;
-  font-size: 1.1em;
-  /* Garante que o corpo ocupe toda a altura da tela */
+    margin: 0;
+    padding: 1;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0a0c0e;
+    text-align: justify;
+    line-height: 1.8;
+    /* Garante que o corpo ocupe toda a altura da tela */
+    font-family: MedievalSharp;
 }
 
 footer {
-  background-color: gray;
+    background-color: gray;
 }
 
 .magesBG {
-  width: 100%;
-  height: auto;
-  top: 0;
-  left: 0;
-  z-index: -1;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    max-width: 190rem;
+    max-height: 200rem;
 }
 
 .container {
-  text-align: center;
-  position: relative;
+    text-align: center;
+    position: relative;
+    width: 100%;
 }
 
 .logo {
-  top: 0;
-  left: 0;
-  position: absolute;
-  z-index: 1;
-  width: 10vw;
-  height: 30vh;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    width: 10rem;
+    height: 12rem;
+    min-width: 5rem;
+    min-height: 6rem;
 }
 
 .navbar-links {
-  position: absolute;
-  z-index: 10;
-  top: 0%;
-  right: 0%;
-  color: white;
-  display: inline;
-  font-size: 2vw;
-  margin: 2rem;
+    position: absolute;
+    z-index: 10;
+    top: 0%;
+    right: 0%;
+    color: white;
+    display: inline;
+    font-size: 1px;
+    width: fit-content;
+    height: fit-content;
 }
 
 .navbar-links,
 a {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
+    font-size: 3vw;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
-  display: inline;
-  font-size: 2vw;
-  margin: 2rem;
+    display: inline;
+    font-size: 5rem;
+    margin: 2rem;
 }
 
 #Spells {
-  color: rgb(245, 70, 70);
-  font-size: 2vw;
-  font-weight: bold;
+    color: rgb(245, 70, 70);
+    font-weight: bold;
 }
 
 #Intro:hover {
-  color: rgb(245, 70, 70);
-  font-weight: bold;
-  cursor: pointer;
+    color: rgb(245, 70, 70);
+    font-weight: bold;
+    cursor: pointer;
 }
 
 #Spells:hover {
-  color: rgb(245, 70, 70);
-  font-weight: bold;
-  cursor: pointer;
+    color: rgb(245, 70, 70);
+    font-weight: bold;
+    cursor: pointer;
 }
 
 #Guild:hover {
-  color: rgb(245, 70, 70);
-  font-weight: bold;
-  cursor: pointer;
+    color: rgb(245, 70, 70);
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .ScrollableText {
-  width: 100%;
-  /* Garante que ocupa pelo menos o tamanho da tela */
-  line-height: 1.8;
-  font-size: 1.1em;
-  z-index: 0;
+    width: 100%;
+    /* Garante que ocupa pelo menos o tamanho da tela */
+    line-height: 1.8;
+    font-size: 1.1em;
+    z-index: 0;
 }
 
 #Destruction {
-  font-size: 2.5vw;
-  text-align: center;
-  background: linear-gradient(#ecff3d, #f79311, #cc0000);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
+    font-size: 2.5vw;
+    width: fit-content;
+    text-align: center;
+    align-items: center;
+    background: linear-gradient(#ecff3d, #f79311, #cc0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
-#Destruction,
-h2 {
-  text-align: right;
-  top: 8rem;
+#DestructionHeader {
+    text-align: center;
+    align-items: center;
+    background: linear-gradient(#ecff3d, #f79311, #cc0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin: 0;
+    font-size: 3rem;
+}
+
+section {
+    font-size: 50rem;
 }
 
 #Destruction-Container {
-  display: flex;
-  margin: 10rem;
-  border: 10rem;
+    display: flex;
+    border: 10rem;
+    width: fit-content;
 }
 
 #Destruction-Container,
 p {
-  position: relative;
-  font-size: 64px;
+    position: relative;
 }
 
 #DestructionSymbol {
-  opacity: 40%;
-  position: absolute;
-  right: 28rem;
-  width: 20%;
+    opacity: 30%;
+    position: absolute;
+    right: 10%;
+    width: 13rem;
+    top: 10%;
 }
 
-#FireStormSpell {
-  width: 100%;
+#FireStormSpell,
+#Tolfdir,
+#Atronach,
+#IllusionCalmSpell,
+#Healing {
+    width: 60rem;
+    max-width: fit-content;
+    min-width: 50rem;
+    height: fit-content;
 }
 
 #Conjuration {
-  font-size: 2.5vw;
-  text-align: center;
-  background: linear-gradient(#6240a0, #3f0086);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
+    font-size: 2.5vw;
+    text-align: center;
+    background: linear-gradient(#6240a0, #3f0086);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+#ConjurationHeader {
+    font-size: 3rem;
+    text-align: center;
+    background: linear-gradient(#6240a0, #3f0086);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
 #Conjuration-Symbol {
-  opacity: 40%;
-  position: absolute;
-  width: 40%;
+    opacity: 30%;
+    position: absolute;
+    right: 10%;
+    width: 20rem;
+    top: 10%;
 }
 
 #Conjuration-Container {
-  display: flex;
-  margin: 10rem;
-  border: 10rem;
-}
-
-#Atronach {
-  width: 100%;
+    display: flex;
+    margin: 0;
+    border: 10rem;
+    height: fit-content;
 }
 
 #Conjuration-Container,
 p {
-  position: relative;
-  font-size: 64px;
+    position: relative;
+    margin: 0;
 }
 
 #Restoration {
-  font-size: 2.5vw;
-  text-align: center;
-  background: linear-gradient(#ffd700, #f79311);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
+    font-size: 2.5vw;
+    text-align: center;
+    background: linear-gradient(#ffd700, #f79311);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+#RestorationHeader {
+    font-size: 3rem;
+    text-align: center;
+    background: linear-gradient(#ffd700, #f79311);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
 #Restoration-Symbol {
-  opacity: 40%;
-  position: absolute;
-  right: 40rem;
-  width: 40%;
+    opacity: 30%;
+    position: absolute;
+    right: 10%;
+    width: 20rem;
+    top: 10%;
 }
 
 #Restoration-Container {
-  display: flex;
-  margin: 10rem;
-  border: 10rem;
-}
-
-#Healing {
-  width: 100%;
+    display: flex;
+    margin: 0;
+    border: 20rem;
+    height: fit-content;
+    min-width: 100rem;
 }
 
 #Restoration-Container,
 p {
-  position: relative;
-  font-size: 64px;
+    position: relative;
+    font-size: 64px;
 }
 
 #Illusion {
-  font-size: 2.5vw;
-  text-align: center;
-  background: linear-gradient(#5478a7, #0073d1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
+    font-size: 2.5vw;
+    text-align: center;
+    background: linear-gradient(#5478a7, #0073d1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+#IllusionHeader {
+    font-size: 3rem;
+    text-align: center;
+    background: linear-gradient(#5478a7, #0073d1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
 #Illusion-Container {
-  display: flex;
-  margin: 10rem;
-  border: 10rem;
+    display: flex;
+    margin: 0;
+    border: 10rem;
+    width: fit-content;
 }
 
 #Conjuration-Container,
 p {
-  position: relative;
-  font-size: 64px;
+    position: relative;
+    font-size: 64px;
 }
 
 #IllusionSymbol {
-  opacity: 40%;
-  position: absolute;
-  left: 20rem;
-  width: 10vw;
-}
-
-#IllusionCalmSpell {
-  width: 100%;
+    opacity: 30%;
+    position: absolute;
+    right: 10%;
+    width: 20rem;
+    top: 235rem;
 }
 
 #Alteration {
-  font-size: 2.5vw;
-  text-align: center;
-  background: linear-gradient(#54a779, #00d13f);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
+    font-size: 2.5vw;
+    text-align: center;
+    background: linear-gradient(#54a779, #00d13f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+#AlterationHeader {
+    font-size: 3rem;
+    text-align: center;
+    background: linear-gradient(#54a779, #00d13f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin: 0;
 }
 
 #Alteration-Container {
-  display: flex;
-  margin: 10rem;
-  border: 10rem;
+    margin: 0;
+    border: 10rem;
+    display: flex;
 }
 
 #Alteration-Container,
 p {
-  position: relative;
-  font-size: 64px;
+    position: relative;
+    font-size: 64px;
 }
 
 #AlterationSymbol {
-  opacity: 40%;
-  position: absolute;
-  right: 10rem;
-  width: 40%;
-}
-
-#Tolfdir {
-  width: 100%;
-}
-
-@media (max-width: 550px) {
-  #magesBG {
-    width: 100vw;
-  }
-  .logo {
-    width: 15vw;
-    height: 10vh;
-    min-width: 5rem;
-    min-height: 5rem;
-  }
-  .navbar-links {
-    margin: 0rem;
-  }
-  #Destruction-Container {
-    display: block;
-    margin: 0;
-    max-height: fit-content;
-    max-width: fit-content;
-    min-width: 20rem;
-  }
-  #FireStormSpell {
-    max-width: fit-content;
-    width: 100vw;
-    left: 0;
-    min-width: 20rem;
-  }
-  #Destruction {
-    max-width: fit-content;
-    margin: 0;
-    width: 100vw;
-    padding-right: 10%;
-    padding-left: 10%;
-    text-align: center;
-    font-size: 0.45em;
-    top: 0;
-    min-width: 20rem;
-  }
-  #Intro {
-    font-size: 1.5em;
-  }
-  #Spells {
-    font-size: 1.5em;
-  }
-  #Guild {
-    font-size: 1.5em;
-  }
-  #Conjuration-Container {
-    display: block;
-    margin: 0;
-    max-height: fit-content;
-    max-width: fit-content;
-    min-width: 20rem;
-  }
-  #Conjuration {
-    max-width: fit-content;
-    margin: 0;
-    padding-left: 10%;
-    padding-right: 10%;
-    text-align: center;
-    font-size: 0.45em;
-    min-width: 20rem;
-  }
-  #Atronach {
-    max-width: fit-content;
-    width: 100vw;
-    right: 0;
-    top: 0;
-    min-width: 20rem;
-  }
-  #Conjuration-Symbol {
-    width: 100vw;
-    top: 0;
-    min-width: 20rem;
-  }
-  #Restoration {
-    max-width: fit-content;
-    margin: 0;
-    padding-left: 10%;
-    padding-right: 10%;
-    text-align: center;
-    font-size: 0.45em;
-    min-width: 20rem;
-  }
-  #Healing {
-    width: 100vw;
-    max-width: fit-content;
-    right: 0;
-    bottom: 0;
-    min-width: 20rem;
-  }
-  #Restoration-Container {
-    display: block;
-    margin: 0;
-    max-height: fit-content;
-    max-width: fit-content;
-    min-width: 20rem;
-  }
-  #Restoration-Symbol {
-    width: 100vw;
-    top: 0;
-    min-width: 20rem;
-  }
-  #Illusion {
-    max-width: fit-content;
-    margin: 0;
-    padding-left: 10%;
-    padding-right: 10%;
-    text-align: center;
-    font-size: 1.5em;
-    min-width: 20rem;
-  }
-  #IllusionCalmSpell {
-    width: 100vw;
-    max-width: fit-content;
-    right: 0;
-    bottom: 0;
-    min-width: 20rem;
-  }
-  #Illusion-Container {
-    display: block;
-    margin: 0;
-    max-height: fit-content;
-    max-width: fit-content;
-    min-width: 20rem;
-  }
-  #IllusionSymbol {
+    opacity: 30%;
     position: absolute;
-    width: 100vw;
-    z-index: -1;
-    min-width: 20rem;
-  }
-  #Alteration-Container {
-    margin: 0;
-    display: block;
+    right: 10%;
+    width: 20rem;
+    top: 10%;
+}
+
+.IntroContainer {
+    display: flex;
+    color: white;
+    font-size: 0.5rem;
+}
+
+.IntroContainer p {
+    font-size: 2.5rem;
+    text-align: justify;
+    left: 2rem;
+    word-spacing: 1.5p;
+}
+
+.SorcererDragon {
     max-width: fit-content;
-    max-height: fit-content;
-    min-width: 20rem;
-  }
-  #Alteration {
-    max-width: fit-content;
-    margin: 0;
-    padding-right: 10%;
-    padding-left: 10%;
-    text-align: center;
-    font-size: 0.5em;
-    min-width: 20rem;
-  }
-  #AlterationSymbol {
-    width: 100vw;
-    left: 0;
-    bottom: 1em;
-    min-width: 20rem;
-  }
-  #Tolfdir {
-    width: 100vw;
-    max-width: fit-content;
-    right: 0;
-    bottom: 0;
-    min-width: 20rem;
-  }
+    height: fit-content;
+    width: 35rem;
+    margin: 0rem 4rem 0rem 4rem;
+    border-left: 1rem;
+}
+
+@media (max-width: 1000px) {
+    html {
+        width: 100%;
+    }
+    #magesBG {
+        width: 70rem;
+        min-width: 10rem;
+    }
+    .logo {
+        width: 10vw;
+        height: 10vw;
+        min-width: 5rem;
+        min-height: 5rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .navbar-links {
+        margin: 0;
+        display: inline;
+        width: fit-content;
+        height: fit-content;
+        top: 0;
+    }
+    li {
+        margin: 0;
+        height: fit-content;
+        width: fit-content;
+    }
+    #Destruction-Container,
+    #Conjuration-Container,
+    #Restoration-Container,
+    #Illusion-Container,
+    #Alteration-Container {
+        display: block;
+        margin: 0;
+        max-width: 100%;
+        min-width: 20rem;
+    }
+    #Destruction {
+        max-width: 100%;
+        margin: 0 auto;
+        width: fit-content;
+        padding: 0 1rem;
+        text-align: center;
+        font-size: 0.6rem;
+        top: 0;
+        min-width: 15rem;
+        align-items: center;
+        word-wrap: break-word;
+    }
+    #DestructionHeader {
+        font-size: 1rem;
+    }
+    #DestructionSymbol {
+        opacity: 30%;
+        position: absolute;
+        right: 5rem;
+        width: 10rem;
+        top: 8rem;
+    }
+    #Conjuration-Symbol,
+    #Restoration-Symbol,
+    #IllusionSymbol {
+        opacity: 30%;
+    }
+    #AlterationSymbol {
+        top: 10rem;
+        opacity: 30%;
+    }
+    #FireStormSpell,
+    #Healing,
+    #IllusionCalmSpell,
+    #Atronach,
+    #Tolfdir {
+        width: 22rem;
+        min-width: 5rem;
+        max-width: fit-content;
+    }
 }
