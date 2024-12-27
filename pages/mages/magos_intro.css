@@ -1,143 +1,202 @@
 html,
 section {
-    margin: 0;
-    padding: 0;
-    font-family: "Times New Roman", Times, serif;
-    height: 100%;
-    /* Garante que o layout ocupe toda a altura da janela */
-    background-image: url(/imgs/after-lots-of-searching-i-finally-found-and-stitched-v0-1xjv6ju5rkkb1.webp);
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+  height: 100%;
+  /* Garante que o layout ocupe toda a altura da janela */
+  background-image: url(/imgs/after-lots-of-searching-i-finally-found-and-stitched-v0-1xjv6ju5rkkb1.webp);
+  background-size: contain;
 }
 
 .container {
-    position: relative;
-    text-align: center;
-    min-width: 60rem;
-    max-width: fit-content;
-    width: 70rem;
-    left: 20rem;
+  position: relative;
+  text-align: center;
+  min-width: 40rem;
+  max-width: 70rem;
+  width: 100%;
+  left: 20rem;
 }
 
 .navbar-links {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
 }
 
 nav ul li {
-    display: inline;
-    font-size: 2.5em;
-    margin: 1rem;
+  display: inline;
+  font-size: 2.5em;
+  margin: 1rem;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: rgb(153, 0, 127);
-    font-weight: bold;
+  text-decoration: none;
+  color: rgb(153, 0, 127);
+  font-weight: bold;
 }
 
 .Logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 15%;
-    /* Proporção para responsividade */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 15%;
+  /* Proporção para responsividade */
 }
 
 #EyeOfMagnus {
-    width: 70rem;
-    /* Responsivo: ocupa toda a largura do container */
-    height: auto;
-    /* Mantém a proporção da imagem */
-    object-fit: contain;
-    /* Garante que a imagem seja visível sem distorção */
+  width: 100%;
+  /* Responsivo: ocupa toda a largura do container */
+  height: auto;
+  /* Mantém a proporção da imagem */
+  object-fit: contain;
+  /* Garante que a imagem seja visível sem distorção */
 }
 
 .TextContainer {
-    background-color: WHITE;
-    max-width: fit-content;
-    width: 70rem;
-    left: 20rem;
-    text-align: center;
-    position: relative;
-    align-items: center;
-    min-width: 60rem;
-    top: 0;
+  background-color: WHITE;
+  max-width: fit-content;
+  width: 100%;
+  min-width: 40rem;
+  max-width: 70rem;
+  left: 20rem;
+  text-align: center;
+  position: relative;
+  align-items: center;
+  top: 0;
 }
 
 #EyeOfBeholderEdit {
-    opacity: 40%;
-    width: 40%;
-    position: absolute;
-    z-index: 0;
-    top: 0;
-    object-fit: contain;
+  opacity: 40%;
+  width: 40%;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  object-fit: contain;
 }
 
 .Texts {
-    top: 10%;
-    font-size: 2em;
-    text-align: center;
-    z-index: 2;
-    font-family: "Times New Roman", Times, serif;
-    position: relative;
-    align-items: center;
-    width: 90%;
-    margin: 2rem auto;
+  top: 10%;
+  font-size: 2em;
+  text-align: center;
+  z-index: 2;
+  font-family: "Times New Roman", Times, serif;
+  position: relative;
+  align-items: center;
+  width: 90%;
+  min-width: 20rem;
+  max-width: 70rem;
+  margin: 2rem auto;
 }
 
 P {
-    margin: 1rem;
-    text-align: justify;
+  margin: 1rem;
+  text-align: justify;
 }
 
 .SpellsContainer {
-    align-items: center;
+  align-items: center;
+  width: 100%;
+  min-width: 20rem;
+  max-width: 70rem;
 }
 
 .SpellsButton {
-    position: absolute;
-    z-index: 1;
+  position: absolute;
+  z-index: 1;
 }
 
 .SpellsBG {
-    width: 70rem;
-    max-width: fit-content;
+  width: 100%;
+  min-width: 20rem;
+  max-width: fit-content;
 }
 
 .GuildsContainer {
-    width: fit-content;
+  width: fit-content;
 }
 
 .GuildsIntroBG {
-    width: 100%;
-    min-width: 60rem;
-    max-width: 70rem;
-    margin: 0 auto;
+  width: 100%;
+  min-width: 20rem;
+  max-width: 70rem;
+  margin: 0 auto;
 }
 
 button {
-    align-items: center;
+  align-items: center;
 }
 
 footer {
-    background-color: gray;
-    margin: 0;
-    padding: 0;
+  background-color: gray;
+  margin: 0;
+  padding: 0;
 }
 
 #Intro:hover {
-    color: #004883;
-    transition: 0.5s;
+  color: #004883;
+  transition: 0.5s;
 }
 
 #Spells:hover {
-    color: #cc0000;
-    transition: 0.5s;
+  color: #cc0000;
+  transition: 0.5s;
 }
 
 #Guild:hover {
-    color: yellow;
-    transition: 0.5s;
+  color: yellow;
+  transition: 0.5s;
+}
+
+.SpellsButton,
+.GuildsButton {
+  background-color: #4caf50;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.SpellsButton:hover,
+.GuildsButton:hover {
+  background-color: #45a049;
+  transform: scale(1.1);
+}
+
+.SpellsBG,
+.GuildsIntroBG {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.SpellsBG:hover,
+.GuildsIntroBG:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+/* Responsividade para dispositivos menores */
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-links {
+    flex-direction: column;
+    text-align: center;
+  }
+  .SpellsButton,
+  .GuildsButton {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+  .SpellsBG,
+  .GuildsIntroBG {
+    width: 100%;
+  }
 }
