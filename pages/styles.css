@@ -91,7 +91,7 @@ header {
 .headerBG {
   width: 100%;
   position: relative;
-  z-index: -1;
+  z-index: 1;
   height: 50rem;
   object-fit: cover;
   min-width: 20rem;
@@ -111,6 +111,7 @@ header {
   height: 100%;
   background-color: rgba(128, 128, 128, 0.4);
   top: 0px;
+  opacity: 40%;
   z-index: 1;
 }
 
@@ -131,7 +132,7 @@ section {
 
 section p {
   color: white;
-  font-family: MedievalSharp;
+  font-family: "Times New Roman", Times, serif;
   font-size: 1.5em;
   width: fit-content;
 }
@@ -153,7 +154,18 @@ section img {
 #IllusionCalmSpell {
   min-width: 30rem;
   max-width: 100rem;
-  width: 100%;
+  width: 50rem;
+  align-items: center;
+}
+
+#DestructionSymbol,
+#Conjuration-Symbol,
+#AlterationSymbol,
+#Restoration-Symbol,
+#IllusionSymbol {
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
 h1 {
@@ -302,7 +314,7 @@ footer {
 
 footer img {
   width: 3rem;
-  height: 5rem;
+  height: 3rem;
 }
 
 footer ul {
@@ -312,7 +324,7 @@ footer ul {
 footer .Links li {
   display: inline;
   width: 0.4rem;
-  height: 0.4rem;
+  height: 0.2rem;
   list-style: none;
 }
 
@@ -327,8 +339,7 @@ footer .Links li {
     width: 100%;
     padding-left: 0;
   }
-  section,
-  .Introducao {
+  section {
     width: 100%;
     border: 0px;
   }
@@ -336,7 +347,54 @@ footer .Links li {
     width: 100%;
     border: 0px;
   }
+  header {
+    width: 100%;
+  }
+  .headerBG {
+    width: 100%;
+  }
   h2 {
     width: 100%;
+    min-width: 20rem;
+    max-width: 70rem;
+  }
+  #FireStormSpell,
+  #Atronach,
+  #Healing,
+  #Tolfdir,
+  #IllusionCalmSpell {
+    min-width: 3rem;
+    max-width: 15rem;
+    width: 14rem;
+    align-items: center;
+  }
+  #DestructionHeader,
+  #AlterationHeader,
+  #ConjurationHeader,
+  #RestorationHeader,
+  #IllusionHeader {
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 2rem;
+    border-right: 0;
+  }
+  #Destruction,
+  #Conjuration,
+  #Restoration,
+  #Illusion,
+  #Alteration {
+    font-size: 1.5rem;
+  }
+  section {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+  }
+  #Intro,
+  #Spells,
+  #Guild {
+    font-size: 1.5rem;
   }
 }
