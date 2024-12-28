@@ -18,33 +18,52 @@ section {
   left: 20rem;
 }
 
-.navbar-links {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-}
+/* nav {
+  background-color: rgb(5, 5, 5);
+  position: relative;
+  width: 100%;
+  position: fixed;
+  z-index: 30;
+  height: 10%;
+  top: 0px;
+  right: 0px;
+}*/
 
-nav ul li {
-  display: inline;
-  font-size: 2.5em;
-  margin: 1rem;
-}
+/*
+.navLinks {
+  list-style: none;
+  display: flex;*/
 
-nav ul li a {
+/* Usar flexbox para alinhamento */
+
+/* justify-content: flex-end;*/
+
+/* Alinha os itens à direita */
+
+/* margin: 0;
+  padding: 0;
+} 
+
+.navLinks li {
+  margin-right: 2rem;*/
+
+/* Espaçamento entre os itens */
+
+/*}
+
+.navLinks a {
   text-decoration: none;
-  color: rgb(153, 0, 127);
-  font-weight: bold;
+  color: white;
+  font-size: 3rem;
 }
 
-.Logo {
+#logo {
   position: absolute;
-  top: 0;
+  width: 5rem;
+  height: 6rem;
+  cursor: pointer;
   left: 0;
-  z-index: 1;
-  width: 15%;
-  /* Proporção para responsividade */
-}
+}*/
 
 #EyeOfMagnus {
   width: 100%;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Magos_Introdução</title>
-    <link rel="stylesheet" href="./magos_intro.css" />
+    <link rel="stylesheet" href="../styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,38 +14,37 @@
   </head>
 
   <body>
-    <section>
-      <div class="container">
+    <header>
+      <h2 class="headerText"></h2>
+      <div class="image-container">
         <img
           src="/imgs/pics-wizard-magic-screenshots-gaming-fantasy-804181-wallhere.com.jpg"
-          alt="EyeOfMagnus"
-          id="EyeOfMagnus"
+          alt="backgroundHeader"
+          class="headerBG"
         />
-        <a href="/pages/home/menu.html">
-          <img
-            src="/imgs/801ce0f6030c095b7539b348a8a9022f.png"
-            alt="DragonLogo"
-            class="Logo"
-          />
-        </a>
-        <nav class="navbar">
-          <ul class="navbar-links">
-            <li>
-              <a id="Intro" href="/pages/mages/magos_intro.html">Introdução</a>
-            </li>
-            <li>
-              <a id="Spells" href="/pages/mages/magos_spells.html">Magias</a>
-            </li>
-            <li>
-              <a id="Guild" href="/pages/mages/magos_guilda.html">Guilda</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="overlay"></div>
       </div>
+      <nav class="navContainer">
+        <a href="/pages/home/menu.html">
+          <img id="logo" src="/imgs/801ce0f6030c095b7539b348a8a9022f.png"
+        /></a>
+        <ul class="navLinks">
+          <li>
+            <a id="Intro" href="/pages/mages/magos_intro.html">Introdução</a>
+          </li>
+          <li>
+            <a id="Spells" href="/pages/mages/magos_spells.html">Magias</a>
+          </li>
+          <li>
+            <a id="Guild" href="/pages/mages/magos_guilda.html">Guildas</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h1>To be in a Wizard's shoes</h1>
+    <section>
+      <div class="container"></div>
       <div class="TextContainer">
-        <!--<img src="/imgs/Eye.png" alt="EyeOfBeholder" id="EyeOfBeholderEdit" />-->
-
-        <h1>To be in a Wizard's shoes</h1>
         <div class="Texts">
           <p>
             <em>
@@ -105,7 +104,25 @@
   </body>
   <footer>
     <ul>
-      <li>Meus links</li>
+      <li>
+        <a href="/pages/home/menu.html"
+          ><img src="/imgs/801ce0f6030c095b7539b348a8a9022f.png"
+        /></a>
+      </li>
+      <li>Imperial Library Project</li>
+      <li>Imperial Project is not affiliated with The Elder Scrolls</li>
+      <div class="Links">
+        <li>
+          <a href="https://github.com/yuri-sl"
+            ><img src="/imgs/github.png"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/yuri-santana-lopes-1303592b2/"
+            ><img src="/imgs/LkdnLogo.png"
+          /></a>
+        </li>
+      </div>
     </ul>
   </footer>
 </html>

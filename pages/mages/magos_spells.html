@@ -1,101 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Magos_Spells</title>
-    <link rel="stylesheet" href="./magos_spells.css" />
+    <link rel="stylesheet" href="../styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=MedievalSharp&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet" />
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=MedievalSharp&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
+    <header>
+      <h2 class="headerText"></h2>
+      <div class="image-container">
+        <img
+          src="/imgs/Mages/6861196.jpg"
+          alt="backgroundHeader"
+          class="headerBG"
+        />
+        <div class="overlay"></div>
+      </div>
+    </header>
     <div class="container">
-        <img class="magesBG" src="/imgs/Mages/6861196.jpg" alt="MagesIntroduction" />
+      <nav class="navContainer">
         <a href="/pages/home/menu.html">
-            <img src="/imgs/801ce0f6030c095b7539b348a8a9022f.png" class="logo" alt="ImperialLibraryLogo" />
-        </a>
-        <nav class="navbar">
-            <ul class="navbar-links">
-                <li>
-                    <a id="Intro" href="/pages/mages/magos_intro.html">Introdução</a>
-                </li>
-                <li>
-                    <a id="Spells" href="/pages/mages/magos_spells.html">Magias</a>
-                </li>
-                <li>
-                    <a id="Guild" href="/pages/mages/magos_guilda.html">Guilda</a>
-                </li>
-            </ul>
-        </nav>
+          <img id="logo" src="/imgs/801ce0f6030c095b7539b348a8a9022f.png"
+        /></a>
+        <ul class="navLinks">
+          <li>
+            <a id="Intro" href="/pages/mages/magos_intro.html">Introdução</a>
+          </li>
+          <li>
+            <a id="Spells" href="/pages/mages/magos_spells.html">Magias</a>
+          </li>
+          <li>
+            <a id="Guild" href="/pages/mages/magos_guilda.html">Guildas</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <section class="ScrollableText"></section>
-    <h2 style="
-        color: white;
-        font-weight: bold;
-        font-size: 2.9rem;
-        text-align: center;
-      ">
-        Qual rumo você irá tomar para dominar a magia?
-    </h2>
-    <div class="IntroContainer">
-        <section class="IntroText">
-            <p>
-                Um mago precisa ser proficiente em muitas áreas. Afinal, não basta você conseguir trazer uma tempestade flamejante se não conseguir se curar de um ferimento que está custando sua vida.
-                <br /> O mesmo pensamento se vale para o caso de você estar isolado no meio de um grupo de inimigos com uma terrível desvantagem numérica e precisar.
-            </p>
-        </section>
-        <img src="/imgs/Mages/Mage.jpg" alt="DragonSorcerer" class="SorcererDragon" />
-    </div>
-    <h2 id="DestructionHeader">Destruição</h2>
-    <div id="Destruction-Container">
-        <img src="/imgs/Mages/Spells/Destruction/destruc.png" alt="Destruction Symbol" id="DestructionSymbol" />
-        <img src="/imgs/Mages/Spells/Destruction/Skyrim-Fire-Storm.png" alt="FireStormSpell" id="FireStormSpell" />
+    <h1>Qual rumo você irá tomar para dominar a magia?</h1>
+    <section>
+      <div class="IntroContainer">
+        <p>
+          Um mago precisa ser proficiente em muitas áreas. Afinal, não basta
+          você conseguir trazer uma tempestade flamejante se não conseguir se
+          curar de um ferimento que está custando sua vida.
+          <br />
+          O mesmo pensamento se vale para o caso de você estar isolado no meio
+          de um grupo de inimigos com uma terrível desvantagem numérica e
+          precisar.
+        </p>
+        <img
+          src="/imgs/Mages/Mage.jpg"
+          alt="DragonSorcerer"
+          class="SorcererDragon"
+        />
+      </div>
+    </section>
+    <section>
+      <h1>
+        <span id="DestructionHeader">Destruição</span>
+      </h1>
+      <div id="Destruction-Container">
+        <img
+          src="/imgs/Mages/Spells/Destruction/destruc.png"
+          alt="Destruction Symbol"
+          id="DestructionSymbol"
+        />
+        <img
+          src="/imgs/Mages/Spells/Destruction/Skyrim-Fire-Storm.png"
+          alt="FireStormSpell"
+          id="FireStormSpell"
+        />
         <br />
-        <p id="Destruction">
-            Utilize de seu conhecimento para controlar os elementos da natureza: fogo, gelo e raio para desferir poderosos ataques contra seus inimigos
-        </p>
-    </div>
-    <h2 id="ConjurationHeader">Conjuração</h2>
-    <div id="Conjuration-Container">
-        <img src="/imgs/Mages/Spells/Conjuration/Conjuration.png" alt="ConjuraçãoSymbol" id="Conjuration-Symbol" />
-        <img src="/imgs/Mages/Spells/Conjuration/Skyrim-Atronach-Trivia.avif" id="Atronach" />
-        <p id="Conjuration">
-            Use sua magia para conjurar criaturas do plano de Oblivion para lutarem ao seu lado no campo de batalha e lhe auxiliarem em combate
-        </p>
-    </div>
-    <h2 id="RestorationHeader">Restauração</h2>
-    <div id="Restoration-Container">
-        <img src="/imgs/Mages/Spells/Restoration/Restoration.png" alt="Restoration Symbol" id="Restoration-Symbol" />
-        <img src="/imgs/Mages/Spells/Restoration/hq720.jpg" alt="Magia de Cura" id="Healing" />
-        <p id="Restoration">
-            Use sua magia para controlar a vida e seus aspectos, trazendo inúmeras vantagens de suporta para a batalha. Curar-se de ferimentos,doenças, proteger-se de mortos-vivos... a vida está sobre suas mãos
-        </p>
-    </div>
-    <h2 id="IllusionHeader">Ilusão</h2>
-    <div id="Illusion-Container">
-        <img src="/imgs/Mages/Spells/Illusion/illusion.png" alt="Ilustion Spell Synbol" id="IllusionSymbol" />
-        <img src="/imgs/Mages/Spells/Illusion/hu657k1mctia1.jpg" alt="IllusionCalmSpell" id="IllusionCalmSpell" />
-        <p id="Illusion">
-            Use sua magia para conjurar efeitos de alteração de percepção da realidade, interferindo diretamente na mente de seus inimigos e tornando uma situação que seria desfavorável para você em uma vantajosa
-        </p>
-    </div>
-    <h2 id="AlterationHeader">Alteração</h2>
-    <div id="Alteration-Container">
-        <img src="/imgs/Mages/Spells/Alteration/alteration.png" alt="Alteration Symbol" id="AlterationSymbol" />
-        <img src="/imgs/Mages/Spells/Alteration/Screenshot_2.png" id="Tolfdir" />
-        <p id="Alteration">
-            Manipule a realidade e use diversas magias de utilidades que podem ser úteis para situações fora de combate. Crie uma luz mágica que te segue, transmute minérios em diferentes tipos, e muito mais
-        </p>
-    </div>
-</body>
-<footer>
-    <ul>
-        <li>Meus links</li>
-    </ul>
-</footer>
 
+        <p id="Destruction">
+          Utilize de seu conhecimento para controlar os elementos da natureza:
+          fogo, gelo e raio para desferir poderosos ataques contra seus inimigos
+        </p>
+      </div>
+      <h1>
+        <span id="ConjurationHeader">Conjuração</span>
+      </h1>
+      <div id="Conjuration-Container">
+        <img
+          src="/imgs/Mages/Spells/Conjuration/Conjuration.png"
+          alt="ConjuraçãoSymbol"
+          id="Conjuration-Symbol"
+        />
+        <img
+          src="/imgs/Mages/Spells/Conjuration/Skyrim-Atronach-Trivia.avif"
+          id="Atronach"
+        />
+        <p id="Conjuration">
+          Use sua magia para conjurar criaturas do plano de Oblivion para
+          lutarem ao seu lado no campo de batalha e lhe auxiliarem em combate
+        </p>
+      </div>
+      <h1>
+        <span id="RestorationHeader">Restauração</span>
+      </h1>
+      <div id="Restoration-Container">
+        <img
+          src="/imgs/Mages/Spells/Restoration/Restoration.png"
+          alt="Restoration Symbol"
+          id="Restoration-Symbol"
+        />
+        <img
+          src="/imgs/Mages/Spells/Restoration/hq720.jpg"
+          alt="Magia de Cura"
+          id="Healing"
+        />
+        <p id="Restoration">
+          Use sua magia para controlar a vida e seus aspectos, trazendo inúmeras
+          vantagens de suporta para a batalha. Curar-se de ferimentos,doenças,
+          proteger-se de mortos-vivos... a vida está sobre suas mãos
+        </p>
+      </div>
+      <h1>
+        <span id="IllusionHeader">Ilusão</span>
+      </h1>
+      <div id="Illusion-Container">
+        <img
+          src="/imgs/Mages/Spells/Illusion/illusion.png"
+          alt="Ilustion Spell Synbol"
+          id="IllusionSymbol"
+        />
+        <img
+          src="/imgs/Mages/Spells/Illusion/hu657k1mctia1.jpg"
+          alt="IllusionCalmSpell"
+          id="IllusionCalmSpell"
+        />
+        <p id="Illusion">
+          Use sua magia para conjurar efeitos de alteração de percepção da
+          realidade, interferindo diretamente na mente de seus inimigos e
+          tornando uma situação que seria desfavorável para você em uma
+          vantajosa
+        </p>
+      </div>
+      <h1>
+        <span id="AlterationHeader">Alteração</span>
+      </h1>
+      <div id="Alteration-Container">
+        <img
+          src="/imgs/Mages/Spells/Alteration/alteration.png"
+          alt="Alteration Symbol"
+          id="AlterationSymbol"
+        />
+        <img
+          src="/imgs/Mages/Spells/Alteration/Screenshot_2.png"
+          id="Tolfdir"
+        />
+        <p id="Alteration">
+          Manipule a realidade e use diversas magias de utilidades que podem ser
+          úteis para situações fora de combate. Crie uma luz mágica que te
+          segue, transmute minérios em diferentes tipos, e muito mais
+        </p>
+      </div>
+    </section>
+  </body>
+  <footer>
+    <ul>
+      <li>
+        <a href="/pages/home/menu.html"
+          ><img src="/imgs/801ce0f6030c095b7539b348a8a9022f.png"
+        /></a>
+      </li>
+      <li>Imperial Library Project</li>
+      <li>Imperial Project is not affiliated with The Elder Scrolls</li>
+      <div class="Links">
+        <li>
+          <a href="https://github.com/yuri-sl"
+            ><img src="/imgs/github.png"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/yuri-santana-lopes-1303592b2/"
+            ><img src="/imgs/LkdnLogo.png"
+          /></a>
+        </li>
+      </div>
+    </ul>
+  </footer>
 </html>

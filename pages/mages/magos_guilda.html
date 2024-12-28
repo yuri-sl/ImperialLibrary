@@ -4,41 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guildas Skyrim</title>
+    <link rel="stylesheet" href="../styles.css" />
     <link href="/pages/mages/magos_guilda.css" rel="stylesheet" />
   </head>
 
   <body>
     <nav class="navContainer">
+      <a href="/pages/home/menu.html"
+        ><img id="logo" src="/imgs/801ce0f6030c095b7539b348a8a9022f.png"
+      /></a>
       <ul class="navLinks">
-        <li><a href="/pages/mages/magos_intro.html">Introdução</a></li>
-        <li><a href="/pages/mages/magos_spells.html">Magias</a></li>
-        <li><a href="/pages/mages/magos_guilda.html">Guildas</a></li>
+        <li>
+          <a id="Intro" href="/pages/mages/magos_intro.html">Introdução</a>
+        </li>
+        <li><a id="Spells" href="/pages/mages/magos_spells.html">Magias</a></li>
+        <li><a id="Guild" href="/pages/mages/magos_guilda.html">Guildas</a></li>
       </ul>
     </nav>
     <header>
-      <div class="TextContainer">
-        <h2 class="headerText">
-          Descubra sobre os principais grupos de magia de Skyrim
-        </h2>
+      <h2 class="headerText"></h2>
+      <div class="image-container">
+        <img
+          src="/imgs/Mages/magesIntro.jpg"
+          alt="backgroundHeader"
+          class="headerBG"
+        />
+        <div class="overlay"></div>
       </div>
-      <img
-        src="/imgs/Mages/magesIntro.jpg"
-        alt="GuildasImg"
-        class="GuildsHeaderIMG"
-      />
-      <img
-        src="/imgs/after-lots-of-searching-i-finally-found-and-stitched-v0-1xjv6ju5rkkb1.webp"
-        alt="backgroundHeader"
-        class="headerBG"
-      />
-      Descubra mais sobre os principais grupos de magia de Skyrim
     </header>
-    <h1>Grupos usuários de Magia com alta presença em Skyrim</h1>
+    <h1>Guildas mágicas presentes em Skyrim</h1>
     <section class="Introdução">
       <img
         src="/imgs/Mages/8725e43441743a7cbc7e293c9f8100f86d8dcf3d_2000x2000.webp"
       />
-      <h2>Um mundo complexo e vasto</h2>
+      <h2 id="Emphasis">Um mundo complexo e vasto</h2>
       <p>
         Como magia é uma ferramenta extremamente poderosa é natural que existam
         indivíduos que se unam diante de uma causa comum para conseguir algum
@@ -50,7 +49,7 @@
       </p>
     </section>
     <section class="Colégio de Winterhold">
-      <h2>Colégio de Magia de Winterhold</h2>
+      <h1 id="NoBorder">Colégio de Magia de Winterhold</h1>
       <img
         src="/imgs/Mages/magesCollege.png"
         alt="Colégio de magia de Winterhold"
@@ -69,7 +68,7 @@
       </p>
     </section>
     <section class="DragonPriests">
-      <h2>Dragon Priests</h2>
+      <h1 id="NoBorder">Dragon Priests</h1>
       <img src="/imgs/Mages/NahkriinDP.webp" />
       <p>
         Sarcerdotes de tempos imemoriáveis que conseguem falar no mesmo idioma
@@ -82,7 +81,7 @@
       </p>
     </section>
     <section class="Thalmor">
-      <h2>Thalmor</h2>
+      <h1 id="NoBorder">Thalmor</h1>
       <img src="/imgs/Mages/The_Fists_of_Thalmor_Paramilitary.webp" />
       <p>
         Grupo de elfos pertencentes à Aldmeri Dominion que possuem uma embaixada
@@ -92,7 +91,7 @@
       </p>
     </section>
     <section class="Graybeards">
-      <h2>Graybeards</h2>
+      <h1 id="NoBorder">Graybeards</h1>
       <img src="/imgs/Mages/graybeards.jpg" />
       <p>
         Um grupo de monges que vivem no topo da "Throat of the World",a montanha
@@ -108,4 +107,27 @@
       </p>
     </section>
   </body>
+  <footer>
+    <ul>
+      <li>
+        <a href="/pages/home/menu.html"
+          ><img src="/imgs/801ce0f6030c095b7539b348a8a9022f.png"
+        /></a>
+      </li>
+      <li>Imperial Library Project</li>
+      <li>Imperial Project is not affiliated with The Elder Scrolls</li>
+      <div class="Links">
+        <li>
+          <a href="https://github.com/yuri-sl"
+            ><img src="/imgs/github.png"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/yuri-santana-lopes-1303592b2/"
+            ><img src="/imgs/LkdnLogo.png"
+          /></a>
+        </li>
+      </div>
+    </ul>
+  </footer>
 </html>
