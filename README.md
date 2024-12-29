@@ -27,3 +27,9 @@ Para acessar o site, basta abrir o arquivo **`pages->home->menu.html`** em qualq
 
 O projeto segue a seguinte organização de arquivos:
 
+ImperialLibrary/
+├── imgs/                   # Pasta com imagens utilizadas no projeto
+├── pages/
+   └── home                 # Arquivo de estilos do site
+   └── mages                # Página inicial do site
+   └── styles.css             #estilos CSS
