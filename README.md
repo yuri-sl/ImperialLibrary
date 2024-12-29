@@ -19,6 +19,9 @@ O site é composto por uma estrutura simples e intuitiva, dividida em uma **tela
 
 Para acessar o site, basta abrir o arquivo **`pages->home->menu.html`** em qualquer navegador web. Este arquivo serve como ponto de partida para navegar por todas as páginas disponíveis.
 
+##Importante!
+Utilize alguma ferramenta para inicializar o servidor local para acessar o site! Recomenda-se FiveServer ou LiveServer
+
 ### Requisitos
 
 - Navegador moderno com suporte a HTML5 e CSS3.
