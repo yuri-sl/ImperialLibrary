@@ -59,10 +59,20 @@ a {
   color: white;
   text-align: center;
   font-weight: bold;
-  font-size: 5rem;
   font-family: MedievalSharp;
   opacity: 0;
   animation: fadeInText 2s forwards 1s;
+}
+
+.Text h2 {
+  font-size: 2rem;
+  color: rgb(109, 109, 109);
+  margin-bottom: 1.5rem;
+}
+
+.Text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 .Text img {
@@ -82,16 +92,17 @@ a {
 
 .Text a {
   color: rgba(199, 199, 199, 0.75);
-  font-size: 82px;
+  font-size: 3rem;
   text-decoration: none;
   display: inline-block;
   margin: 24px;
   opacity: 0;
   animation: fadeInLink 2s forwards 3s;
+  margin: 0;
 }
 
 .Text a:hover {
-  color: yellow;
+  color: rgb(0, 255, 255);
   transition: 0.8s;
 }
 

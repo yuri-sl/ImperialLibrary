@@ -1,6 +1,7 @@
 html,
 body {
   margin: 0;
+  background-color: #0a0c0e;
 }
 
 nav {
@@ -154,7 +155,7 @@ section img {
 #IllusionCalmSpell {
   min-width: 30rem;
   max-width: 100rem;
-  width: 50rem;
+  width: 60rem;
   align-items: center;
 }
 
@@ -178,6 +179,8 @@ h1 {
   font-size: 4.5rem;
   background-color: black;
   color: white;
+  margin: 2rem;
+  margin-left: 0;
 }
 
 #Destruction {
@@ -292,12 +295,13 @@ h1 {
   width: 100%;
 }
 
-.SpellsBG {
-  width: 100%;
-}
-
+.SpellsBG,
 .GuildsIntroBG {
-  width: 100%;
+  width: 60rem;
+  display: grid;
+  align-items: center;
+  position: relative;
+  margin-left: 24%;
 }
 
 footer {
@@ -305,7 +309,7 @@ footer {
   color: white;
   text-align: center;
   align-items: center;
-  display: grid;
+  display: inline-block;
   list-style: none;
   width: 100%;
   border: 4px solid black;
@@ -313,8 +317,8 @@ footer {
 }
 
 footer img {
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 5rem;
 }
 
 footer ul {
@@ -328,9 +332,52 @@ footer .Links li {
   list-style: none;
 }
 
+.GuildsButton,
+.SpellsButton {
+  background-color: #860c0c;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  /* Add shadow */
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.GuildsButton:hover,
+.SpellsButton:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.GuildsButton:active,
+.SpellsButton:active {
+  transform: scale(0.95);
+}
+
 @media (max-width: 1000px) {
+  .SpellsBG,
+  .GuildsIntroBG {
+    width: 60rem;
+    display: grid;
+    align-items: center;
+    position: relative;
+    margin-left: 0;
+  }
   h1 {
     width: 100%;
+    margin: 0.1rem;
+    text-align: center;
+  }
+  .SpellsBG {
+    width: 20rem;
+  }
+  .GuildsIntroBG {
+    width: 20rem;
   }
   .overlay {
     width: 100%;
